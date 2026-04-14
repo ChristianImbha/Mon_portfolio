@@ -27,7 +27,7 @@
     <!--Section hero-->
 
   <main>
-     <section class=" flex flex-col justify-around md:flex-row  md:text-left py-20 px-10">
+     <section class=" flex flex-col justify-around items-center md:flex-row  md:text-left py-20 px-10">
         <div >
             <div>
                 <div>
@@ -44,26 +44,33 @@
             </div>
 
         </div>  
-        <div >
-                
-            <form class="flex flex-row justify-content items-center space-x-6 flex-wrap">
-                <div class=" flex flex-col  justify-between space-y-2">
-                    <div><input type="text" placeholder="Votre nom" class="w-full border rounded px-4 py-2"></div>
-                    <div><input type="email" placeholder="Votre email" class="w-full border rounded px-4 py-2"></div>
-                    
-                </div> 
-                <div class=" flex flex-col  items-center  space-y-2">  
-                    <div><input type="text" placeholder="Votre Postnom" class="w-full border rounded px-4 py-2"></div>
-                    <div><input type="text" placeholder="Votre numero" class="w-full border rounded px-4 py-2 "></div>
-                    
-                </div>                         
-                <div  flex flex-col  justify-between space-y-2">
-                    <div><textarea placeholder="Votre message" class="w-100% border rounded px-4 py-2 h-28"></textarea></div>
-                </div> 
-                <div  flex flex-col  justify-between space-y-2">
-                    <div><button type="submit" class="p-6 bg-blue-600 text-white px-4 py-3 text-center w-20 h-20 rounded-full  shadow hover:bg-blue-700 transition">Envoyer</button></div>
-                </div>      
-            </form>
+        <div>
+  <form class="grid md:grid-cols-2 gap-6">
+    <!-- Colonne gauche -->
+    <div class="flex flex-col space-y-4">
+      <input type="text" placeholder="Votre nom" class="w-full border rounded px-4 py-2">
+      <input type="email" placeholder="Votre email" class="w-full border rounded px-4 py-2">
+    </div>
+
+    <!-- Colonne droite -->
+    <div class="flex flex-col space-y-4">
+      <input type="text" placeholder="Votre Postnom" class="w-full border rounded px-4 py-2">
+      <input type="text" placeholder="Votre numéro" class="w-full border rounded px-4 py-2">
+    </div>
+
+    <!-- Champ message (prend toute la largeur) -->
+    <div class="md:col-span-2">
+      <textarea placeholder="Votre message" class="w-full border rounded px-4 py-2 h-28"></textarea>
+    </div>
+
+    <!-- Bouton (centré à droite) -->
+    <div class="md:col-span-2 flex justify-end">
+      <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:bg-blue-700 transition">
+        Envoyer
+      </button>
+    </div>
+  </form>
+</div>
         </section>              
                 
         </div>
