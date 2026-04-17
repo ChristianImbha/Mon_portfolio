@@ -8,10 +8,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>  
-<body class=" bg-neutral-900">
+<body class=" bg-neutral-700">
      <!-- Header -->
       
-  <header class="flex justify-between   text-white items-center p-6">
+  <header class="fixed">
+    <div class="flex  w-screen bg-sky-950 text-white items-center p-6">
     <h1 class="text-xl font-bold">Christian IMBHA</h1>
     <nav class="space-x-6">
       <ul class="flex flex-row justify-center gap-2">
@@ -22,10 +23,11 @@
          <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
       </ul>
     </nav>
+    </div>
   </header>
   <main>
-    <secion class="flex flex-col text-center  md:flex-row items-center justify-around  text-white md:text-left py-12 px-5">
-        <div class="flex flex-row gap-x-20 py-12 ">
+    <secion class="flex flex-col text-center  md:flex-col items-center justify-around  text-white md:text-left py-12 px-5">
+        <div class="flex flex-row justify-center gap-x-20 py-12">
             <div class="py-2 px-2 max-w-xl ">
                 <h2 class="text-3xl font-bold mb-4 ">Dr Normand</h2> 
                 
@@ -33,8 +35,8 @@
                 C’est un site qui m’a permit de mettre en pratique mes connaissances en CSS afin d'améliorer l'apparence et la mise en page tout en respectant les bonnes pratiques du développement web.
                 </p>                
             </div>
-            <div class="md:justify-center">
-                <img src="Dr Norman.png" alt="premier projet" class="w-48 h-48 object-cover">
+            <div>
+                <img src="Dr Norman.png" alt="premier projet" class="w-60 h-60 object-cover">
             </div>
         </div> 
         <div class="flex flex-row gap-x-20 py-12">
@@ -45,11 +47,11 @@
                 C’est un site qui m’a permit de mettre en pratique mes connaissances en CSS afin d'améliorer l'apparence et la mise en page tout en respectant les bonnes pratiques du développement web.
                 </p>                
             </div>
-            <div class="md:justify-center ">
-                <img src="Site DGM.png" alt="premier projet" class="w-48 h-48 object-cover">
+            <div >
+                <img src="Site DGM.png" alt="premier projet" class="w-60 h-60 object-cover">
             </div>
         </div> 
-       <div class="flex flex-row gap-x-20 py-12">
+       <div class="flex flex-row gap-x-20 py-12 md:row">
             <div class="py-2 px-2 max-w-xl ">
                 <h2 class="text-3xl font-bold mb-4 ">Dr Normand</h2> 
                 
@@ -57,8 +59,8 @@
                 C’est un site qui m’a permit de mettre en pratique mes connaissances en CSS afin d'améliorer l'apparence et la mise en page tout en respectant les bonnes pratiques du développement web.
                 </p>                
             </div>
-            <div class="md:justify-center ">
-                <img src="Responsive.png" alt="premier projet" class="w-48 h-48 object-cover">
+            <div>
+                <img src="Responsive.png" alt="premier projet" class="w-60 h-60 object-cover">
             </div>
         </div> 
     </secion>
