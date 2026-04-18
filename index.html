@@ -8,18 +8,18 @@
   <script src="https://cdn.tailwindcss.com"></script>
  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>  
-<body class=" bg-[url('Background.png')] bg-cover bg-center relative bg-black/80">
+<body class=" bg-[url('Background.png')] bg-cover bg-center relative bg-black/80 absolute inset-0">
      <!-- Header -->
       
-  <header class="fixed" >
+  <header class="fixed top-0 left-0 w-full" >
     <div class="flex justify-between bg-sky-950/40 text-white w-screen items-center p-6">
       <h1 class="text-xl font-bold">Christian IMBHA</h1>
       <nav class="space-x-6">
-        <ul class="flex flex-row justify-center gap-2">
+        <ul class="flex flex-row flex-wrap justify-center gap-x-6">
           <li> <a href="cv.html" class="hover:text-blue-600 hover:scale-110">CV</a></li>
-          <li class="separateur">|</li>
+          
           <li> <a href="projet.html" class="hover:text-blue-600 hover:scale-110">Projets</a></li>
-          <li class="separateur">|</li>
+          
           <li><a href="contacts.html" class="hover:text-blue-600 hover:scale-110">Contact</a></li>
         </ul>
       </nav>
@@ -38,7 +38,7 @@
           Je suis <span class="font-bold mb-3">Christian IMBHA</span> , un développeur web passionné.  j’unis code et design pour bâtir des interfaces élégantes et utiles. Je conçois des solutions web modernes et performantes. Je conçois des solutions modernes et perfomantes.
         </p>  
       </div>
-      <div class="flex flex-row items-center justify-between" >    
+      <div class="flex flex-row flex-wrap items-center justify-between" >    
         <a href="cv.html" class="flex items-center justify-center bg-blue-900 text-white px-6 py-3 rounded-full shadow hover:bg-blue-500/60 transition hover:scale-110">CV</a>
         <a href="projet.html" class="flex items-center justify-center bg-blue-900 text-white px-6 py-3 rounded-full shadow hover:bg-blue-500/60 transition hover:scale-110">Projets</a>
         <a href="contacts.html" class="flex items-center justify-center bg-blue-900 text-white px-6 py-3 rounded-full shadow hover:bg-blue-500/60 transition hover:scale-110">Contact</a>
