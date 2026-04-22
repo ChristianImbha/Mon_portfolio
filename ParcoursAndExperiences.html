@@ -11,33 +11,39 @@
 <body class=" bg-[url('Background.png')] bg-cover bg-center relative bg-black/80 absolute inset-0">
      <!-- Header -->
       
-  <header class="flex items-center justify-between px-6 py-4 bg-gray-900 text-white">
-  
-  <h1 class="text-2xl font-bold">Christian IMBHA</h1>
+  <header class="fixed top-0 left-0 w-full bg-gray-900 text-white shadow-md z-50">
+  <div class="flex items-center justify-between px-6 py-4 bg-gray-900 text-white" > 
 
-  <!-- Menu desktop -->
-  <nav class="hidden md:flex space-x-6">
-    <a href="#cv" class="hover:text-blue-400">CV</a>
-    <a href="#projets" class="hover:text-blue-400">Projets</a>
-    <a href="#contact" class="hover:text-blue-400">Contact</a>
-  </nav>
+     <a href="index.html" class="flex items-center space-x-2">
+      <img src="log.png" alt="Logo Christian IMBHA" class="h-10 w-10 rounded-full">
+      <span class="text-xl font-bold hover:text-blue-400">Christian Imbha</span>
+    </a>
+    
 
-  <!-- Bouton burger mobile -->
-  <button id="burger" class="md:hidden focus:outline-none">
+    <!-- Menu desktop -->
+    <nav class="hidden md:flex space-x-6">
+      <a href="cv.html" class="hover:text-blue-400">CV</a>
+      <a href="projet.html" class="hover:text-blue-400">Projets</a>
+      <a href="contacts.html" class="hover:text-blue-400">Contact</a>
+    </nav>
 
-    <!-- Icône hamburger -->
-    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-        d="M4 6h16M4 12h16M4 18h16"/>
-    </svg>
-  </button>
+    <!-- Bouton burger mobile -->
+    <button id="burger" class="md:hidden focus:outline-none">
+
+      <!-- Icône hamburger -->
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
 </header>
 
   <!-- Menu mobile caché -->
   <nav id="mobileMenu" class="hidden flex-col bg-gray-800 text-white space-y-4 p-6 md:hidden">
-    <a href="#cv" class="hover:text-blue-400">CV</a>
-    <a href="#projets" class="hover:text-blue-400">Projets</a>
-    <a href="#contact" class="hover:text-blue-400">Contact</a>
+    <a href="cv.html" class="hover:text-blue-400">CV</a>
+    <a href="projet.html" class="hover:text-blue-400">Projets</a>
+    <a href="contacts.html" class="hover:text-blue-400">Contact</a>
   </nav>
 
   <main class="pt-32 px-6 text-white">
@@ -115,15 +121,18 @@
   <hr>
   <!-- Footer -->
   <footer class="p-20 flex flex-col md:flex-row items-center text-white py-6 text-sm text-gray-500 justify-between">
-    <div class="flex flex-col justify-between items-center">
+     <div class="flex flex-col justify-between items-center">
         <div>Télephone</div>
-        <div>+243 971 396 662</div>
+        <div>
+            <a href="+243 971 396 662 " class="hover:text-blue-400">+243 971 396 662 </a>
+        </div>
     </div>
-       
     <div class="flex flex-col justify-between items-center">
         <div>Email</div>
-        <div>christianimbha@gmail</div>
-    </div>  
+        <div>
+             <a href="christianimbha@gmail.com" class="hover:text-blue-400">christianimbha@gmail.com</a>
+            </div>
+    </div>
     <div>
         <div class="flex flex-col justify-between items-center">
           <div>Suivez-moi</div>

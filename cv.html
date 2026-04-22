@@ -11,41 +11,48 @@
 <body class=" bg-[url('Background.png')] bg-cover bg-center relative absolute inset-0 bg-black/50">
      <!-- Header -->
       
-  <header class="flex items-center justify-between px-6 py-4 bg-gray-900 text-white">
-  
-  <h1 class="text-2xl font-bold">Christian IMBHA</h1>
+<header class="fixed top-0 left-0 w-full bg-gray-900 text-white shadow-md z-50">
+  <div class="flex items-center justify-between px-6 py-4 bg-gray-900 text-white" > 
 
-  <!-- Menu desktop -->
-  <nav class="hidden md:flex space-x-6">
-    <a href="#cv" class="hover:text-blue-400">CV</a>
-    <a href="#projets" class="hover:text-blue-400">Projets</a>
-    <a href="#contact" class="hover:text-blue-400">Contact</a>
-  </nav>
+     <a href="index.html" class="flex items-center space-x-2">
+      <img src="log.png" alt="Logo Christian IMBHA" class="h-10 w-10 rounded-full">
+      <span class="text-xl font-bold hover:text-blue-400">Christian Imbha</span>
+    </a>
+    
 
-  <!-- Bouton burger mobile -->
-  <button id="burger" class="md:hidden focus:outline-none">
+    <!-- Menu desktop -->
+    <nav class="hidden md:flex space-x-6">
+      <a href="cv.html" class="hover:text-blue-400">CV</a>
+      <a href="projet.html" class="hover:text-blue-400">Projets</a>
+      <a href="contacts.html" class="hover:text-blue-400">Contact</a>
+    </nav>
 
-    <!-- Icône hamburger -->
-    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-        d="M4 6h16M4 12h16M4 18h16"/>
-    </svg>
-  </button>
+    <!-- Bouton burger mobile -->
+    <button id="burger" class="md:hidden focus:outline-none">
+
+      <!-- Icône hamburger -->
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
 </header>
 
   <!-- Menu mobile caché -->
   <nav id="mobileMenu" class="hidden flex-col bg-gray-800 text-white space-y-4 p-6 md:hidden">
-    <a href="#cv" class="hover:text-blue-400">CV</a>
-    <a href="#projets" class="hover:text-blue-400">Projets</a>
-    <a href="#contact" class="hover:text-blue-400">Contact</a>
+    <a href="cv.html" class="hover:text-blue-400">CV</a>
+    <a href="projet.html" class="hover:text-blue-400">Projets</a>
+    <a href="contacts.html" class="hover:text-blue-400">Contact</a>
   </nav>
   <main class="pt-32 px-6 text-white" >
     <!-- Section Hero Experience professionnelle-->
-    <section class=" flex flex-col text-center  md:flex-row items-center justify-around  text-white md:text-left py-6 px-5">
+    <section class=" flex flex-col text-center  md:flex-row items-center justify-around  text-white md:text-left py-3 px-5">
         
         <div class="flex flex-col">
             <div class="py-2 px-2 max-w-3xl">
-                <h2 class="text-3xl text-white  font-bold mb-4">Stage scolaire</h2> 
+                <h1 class="text-3xl text-white  font-bold mb-4">Curriculum vitae</h1> 
+                <h2 class="text-2xl text-white  font-bold mb-4">Stage scolaire</h2> 
                 <h3 class="text-2xl text-white font-semibold mb-4">Gecamines HMS</h3>
                 <p class="text-white leading-relaxed">
                 Lors de mon stage scolaire à Gecamines HMS, j’ai intégré une équipe de maintenance spécialisée dans les moteurs électriques. J’ai appris à effectuer des contrôles réguliers, à anticiper les pannes grâce à la maintenance préventive et à appliquer des procédures de sécurité strictes. Aujourd’hui, cette expérience m’a donné une solide base en diagnostic et en entretien des systèmes électriques, que j’utilise pour aborder tout projet technique avec rigueur et fiabilité.
@@ -99,7 +106,7 @@
                 <p class="max-w-xl mb-6">
                             Découvrez mon parcours complet et mes compétences en téléchargeant mon CV.
                 </p>
-                <div class="flex flex-row gap-6">
+                <div class="flex md:flex-row flex-col gap-6">
                     <div>
                         <a href="Christian_IMBHA_CV.pdf" 
                             class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 hover:scale-105 transition transform duration-300">
@@ -125,11 +132,15 @@
   <footer class="p-20 flex flex-col md:flex-row items-center py-6 text-sm  text-white justify-between">
     <div class="flex flex-col justify-between items-center">
         <div>Télephone</div>
-        <div>+243 971 396 662</div>
+        <div>
+            <a href="+243 971 396 662 " class="hover:text-blue-400">+243 971 396 662 </a>
+        </div>
     </div>
     <div class="flex flex-col justify-between items-center">
         <div>Email</div>
-        <div>christianimbha@gmail.com</div>
+        <div>
+             <a href="christianimbha@gmail.com" class="hover:text-blue-400">christianimbha@gmail.com</a>
+            </div>
     </div>
     <div>
         <div class="flex flex-col justify-between items-center">
